@@ -8,7 +8,7 @@ import com.flyue.json.type.JsonValue;
  * @Date: Created in 2019/8/3 20:43
  * @Description:
  */
-public interface ParserApi {
+public interface JsonParser {
 
     public static final int LEPT_PARSE_OK = 0;
     // 若一个 JSON 只含有空白，传回 LEPT_PARSE_EXPECT_VALUE
