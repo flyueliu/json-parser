@@ -1,7 +1,7 @@
 package com.flyue.json.parser;
 
-import com.flyue.json.type.LeptType;
-import com.flyue.json.type.LeptValue;
+import com.flyue.json.type.JsonParserContext;
+import com.flyue.json.type.JsonValue;
 
 /**
  * @Author: Liu Yuefei
@@ -18,6 +18,8 @@ public interface ParserApi {
     // 若值不是那三种字面值，传回 LEPT_PARSE_INVALID_VALUE
     public static final int LEPT_PARSE_ROOT_NOT_SINGULAR = 3;
 
-    int leptParser(LeptValue value, String json);
+    JsonValue parse(String jsonStr);
+
+    int parser(JsonValue value, JsonParserContext context);
 
 }
